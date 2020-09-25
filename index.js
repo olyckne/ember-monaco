@@ -14,7 +14,7 @@ const rollupBabel = require('rollup-plugin-babel');
 
 let environment;
 
-const DEBUG = true || process.env.BROCCOLI_DEBUG;
+const DEBUG = process.env.BROCCOLI_DEBUG;
 function maybeDebug(tree, name) {
   if (DEBUG) return stew.debug(tree, { name });
   else return tree;
